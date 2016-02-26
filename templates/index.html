@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Lib.r Catalogue</h1>
+<br>
+
+<form action ="" method = "post"> 
+  <input type="text" placeholder="Title of Book" name="Title" value="">
+  <input type="password" placeholder="Author" name="Author" value="">
+  <input class="btn btn-default" type="submit" value="Search">
+</form>
+
+{% for book in books %}
+  <strong>Title: </strong>{{ book.title }}<br>
+  <strong>Author: </strong>{{ book.author }}<br>
+<br>
+{% endfor %}
+
+<p>Click <a href="/logout">here</a> LOG OUT!</p>
+
+{% endblock %}
+
+ 

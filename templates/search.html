@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Search Results</h1>
+<br>
+
+{% for book in books %}
+  <strong>Title: </strong>{{ book.title }}<br>
+
+<br>
+{% endfor %}
+
+<p>Click <a href="/">here</a> LOG OUT!</p>
+
+{% endblock %}
